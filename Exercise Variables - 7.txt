@@ -1,0 +1,3 @@
+# Exercise Variables - 7
+# Write single quotes or double quotes correctly
+val = "Hi, my name is John Doe, 'python'"

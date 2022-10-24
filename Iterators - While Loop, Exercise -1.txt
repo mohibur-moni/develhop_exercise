@@ -1,0 +1,12 @@
+# Iterators - While Loop, Exercise -1
+"""Create ` * **
+
+` this shape with print and while loop statements
+"""
+
+# Iterators - While Loop
+# Create ` * **
+i = 1 
+while i<6:
+    print("*"*i)
+    i = i+ 1

@@ -1,0 +1,53 @@
+# Data Structures, Exercise -4
+"""
+Remember list,set,dictionary are mutable and tuple is immutable list,tuple elements can be reached by index
+for dictionary it is not an option to reach by index the element key has to be known to reach
+and for set the items cannot be reached directly but it is possible to iterate.
+
+print the lengths of list1,tuple1,set1,dict1
+print the first element of list1 and tuple1
+print the value of lion key of dict1
+change the 2nd position element of list1 to "rabbit"
+try to change the 2nd position element of the tuple to "rabbit" and explain what happened.
+add "monkey" to list1
+remove "rabbit" from list1
+in dict1 the number of feet is written as value to each animal the fixh has wrong value just fix it.
+
+"""
+list1 = ["lion", "monkey", "dog","fish"]
+tuple1 = ("lion", "monkey", "dog","fish")
+set1 = {"lion", "monkey", "dog","fish"}
+dict1 = {"lion":4, "monkey":2, "dog":4,"fish":2}
+
+# print the lengths of list1,tuple1,set1,dict1
+print( f'''The length of lsit1 is {len(list1)}.
+The length of tuple1 is {len(tuple1)}.
+The length of set1 is {len(set1)}.
+The length of dict1 is {len(dict1)}.''')
+print()
+# print the first element of list1 and tuple1
+print(f'first element of list1 is {list1[0]}, first elemnet of tuple1 is {tuple1[0]}')
+print()
+# print the value of lion key of dict1
+print(f"lion key value is {dict1['lion']}")
+print()
+# change the 2nd position element of list1 to "rabbit"
+print(list1)
+list1[1] = 'rabbit'
+# after adding 'rabbit'
+print(list1)
+print('\n ---try to change the 2nd position element of the tuple to "rabbit" and explain what happened.--- \n')
+try:
+    tuple[1] = 'rabbit'
+except TypeError:
+    print(" 'object does not support item assignment', because the tuple is immuatable.  \n")
+    
+# add "monkey" to list1
+print(list1) # before adding the monkey 
+list1.append('monkey')
+print(list1, '\n') # after adding the monkey 
+# remove "rabbit" from list1
+list1.remove('rabbit')
+print(list1, '\n')
+dict1['fish'] = 0
+print(dict1)

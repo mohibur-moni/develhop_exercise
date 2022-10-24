@@ -1,0 +1,16 @@
+""" Create
+
+*
+***
+*****
+this shape with print, for loop, if and continue statements"""
+
+
+for n in range(1,10,2):
+    print("*" * n)
+    
+    if n < 4:
+        continue
+    else:
+        break
+    

@@ -1,0 +1,16 @@
+# Exercise 6
+""" Functions Implement Fibonacci sequence as recursive function and print first 5 elements."""
+
+def fibo_seq(n):
+    if n <=1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        return fibo_seq(n-1)+fibo_seq(n-2) # recursive as the fucntion calling itself in the function.
+for i in range(1,10):
+    if i == 6:
+        break
+    else:
+        print(f'{i} : {fibo_seq(i)}')
+        
