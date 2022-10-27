@@ -1,0 +1,9 @@
+# Exercise 7 - Functions
+""" Create a lambda function that returns 2nd power of given number if its even
+and run it on the given list
+then print the result to the screen """
+
+my_list= [*range(5)] 
+
+result = [(lambda x: x*x if x%2 == 0 else x)(x) for x in my_list]
+print(result)
