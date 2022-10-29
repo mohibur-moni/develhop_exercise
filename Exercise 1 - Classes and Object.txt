@@ -1,0 +1,16 @@
+# Exercise 1 - Classes and Object
+""" Let's create Animal class and then create the animal object that runs and having 4 legs
+
+create animal object with leg count when created print "Animal object was created" and 
+then call runs method of it and it prints "Running started """
+
+class Animal:
+    def __init__(self, count):
+        self.count = count
+        print(f"Animal object was created and it has {count} legs. ")
+        
+    def run(self):
+        print('Running started.')
+
+animal_1 = Animal(4) # animal object is created with count
+animal_1.run() # callind the method from Animal class        
