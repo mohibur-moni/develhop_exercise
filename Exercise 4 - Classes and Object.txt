@@ -1,0 +1,21 @@
+# Exercise 4 - Classes and Object
+"""Let's inherit Dog class from Animal add name(private) attribute to Dog class and then bark method to print woof woof
+
+print name_of_dog make it bark count the legs"""
+class Dog(Animal): # inherit form the parents class (car)
+    
+    def __init__(self,count):
+        super().__init__(count)
+        self.name = '' # only accessible in child class (Dog)
+    
+    def bark(self):
+        # making it bark and counting the legs
+        print(f'The dog name is {self.name} and its barking: woof woof, also it has {self.count} legs.')
+        
+        
+        
+        
+dog_one = Dog(4)
+dog_one.name = 'tomy'
+dog_one.bark()
+
