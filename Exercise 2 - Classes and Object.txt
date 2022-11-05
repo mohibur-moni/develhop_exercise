@@ -1,0 +1,30 @@
+# Exercise 2 - Classes and Object
+
+""" Now continue with the Animal class we had used before
+
+Add a method to count the legs count_legs which prints the number of legs
+
+Add a method to count the legs return_legs which returns the number of legs
+
+print number of legs directly from number_of_legs variable of the object """
+class Animal:
+    def __init__(self, count):
+        self.count = count
+        print(f"Animal object was created and it has {count} legs. ")
+        
+    def runs(self):
+        print('Running started.')
+    
+    def count_legs(self):  
+        print(f'The number of legs are {self.count}.')
+    
+    def count_legs(self): # Add a method to count the legs return_legs which returns the number of legs
+        return self.count
+
+
+animal_1 = Animal(4) # animal object is created with count
+animal_1.runs() # callind the method from Animal class     
+animal_1.count_legs() # 
+number_of_legs = animal_1.count_legs() 
+print(number_of_legs) # print number of legs directly from number_of_legs variable of the object 
+

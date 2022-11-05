@@ -1,0 +1,32 @@
+# Exercise 3 - Classes and Object
+""" Exercise 3 - Classes and Object
+Again let's keep talking on Animal class we have.
+with 3 methods we just reached the number of legs
+to prevent direct interacting with the class variables
+most of the other programming languages have encapsulation.
+But in python we don't have it instead we use _ prefix for it as convention
+it is also same for the methods
+
+_legs this shows us not to touch this variable its up to you if you want to change it you can but _ asks you politely not to do it.
+
+Change the number_of_legs to conventional private variable and call from another method """
+
+class Animal:
+    
+    _number_of_legs = 4; # private variable
+    
+    def __init__(self):
+         pass
+    
+    def legs_check(self):
+        try:
+            print(f'There are {_number_of_legs}')
+        except:
+            print('You are trying to access a private variable')
+            
+    def legs_check_print(self):
+        print('There are', Animal._number_of_legs,'legs.') # if we want to access the variable
+
+dog_1 = Animal()
+dog_1.legs_check() # when tryning to print a private variable
+dog_1.legs_check_print() # possible now to access the private variable

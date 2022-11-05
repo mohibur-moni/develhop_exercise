@@ -9,8 +9,8 @@ class Animal:
         self.count = count
         print(f"Animal object was created and it has {count} legs. ")
         
-    def run(self):
+    def runs(self):
         print('Running started.')
 
 animal_1 = Animal(4) # animal object is created with count
-animal_1.run() # callind the method from Animal class        
+animal_1.runs() # callind the method from Animal class        
